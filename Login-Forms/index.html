@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main-container{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(66, 65, 66, 0.26);
+    }
+
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(58, 57, 57, 0.66);
+    }
+
+    .header h1{
+        padding-left: 2rem;
+    }
+
+    .login-form{
+        width: 30vw;
+        background-color: rgba(254, 253, 253, 0.678);
+        height: 70vh;
+        margin: 0 auto;
+        margin-top: 3rem;
+        border-radius: 30px;
+    }
+
+    .login-form h1{
+        text-align: center;
+        padding-top: 1rem;
+        color: rgba(58, 57, 57, 0.66);
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .mid-content{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .input-fields{
+        /* padding-bottom: 1rem; */
+        border: none;
+        border-radius: 10px;
+        width: 30vw;
+        height: 8vh;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .input-fields input{
+        width: 16vw;
+        height: 5vh;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        font-size: 1.08rem;
+        background-color: rgba(128, 128, 128, 0.095);
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+        color: rgba(128, 128, 128, 0.566);
+        letter-spacing: 0.1rem;
+    }
+
+    .btn{
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn button{
+        width: 10vw;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: rgba(58, 57, 57, 0.66);
+        color: rgba(18, 18, 18, 0.895);
+        border: none;
+        font-size: 3vh;
+    }
+
+    .btn button a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn button:hover{
+        cursor: pointer;
+        background-color: rgba(66, 65, 66, 0.532);
+        transition: 0.5s;
+        color: rgba(51, 51, 51, 0.793);
+    }
+
+    .other-options{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .other-options a{
+        font-style: italic;
+        text-decoration: none;
+        color: rgba(58, 57, 57, 0.66);
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .other-options a:hover{
+        color: rgba(0, 0, 0, 0.87);
+        transition: 0.5s;
+    }
+
+</style>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Login Form</h1>
+            <!-- <hr> -->
+        </div>
+        <div class="login-form">
+            <h1>Login</h1>
+            <div class="mid-content">
+                <div class="input-fields">
+                    E-mail ID : <input type="text" name="email_id" id="email_id" placeholder="Enter E-mail">
+                </div>
+                <div class="input-fields">
+                    Password : <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#">
+                    <button>Login</button>
+                </a>
+            </div>
+            <div class="other-options">
+                <a href="#">Already Have An Account.</a><br>
+                <a href="#">Forgot Password?</a><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

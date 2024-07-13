@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.border-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 50px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.border-box h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #178edd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.border-box .input-box h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #178edd;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 400;
+
+}
+
+.border-box .input-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+    background: transparent;
+}
+
+.border-box .login-button button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 6px;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+
+}
+
+.login-button button:hover{
+    cursor: pointer;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    color: black;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+.other-options a{
+    color: #3fb0fb;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+/* .border-box button{
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 6px 0;
+    width: 100%;
+    transition: 0.5s;
+    border: none;
+    outline: none;
+} */
+
+/* .border-box input:focus{
+    border-bottom: 0px ;
+    transition: 0.5s;
+    box-shadow: 0 15px 25px rgba(0, 0, 0,.6);
+    border-radius: 10px;
+    text-align: center;
+} */
+
+/* .border-box button{
+    color: gray;
+} */
