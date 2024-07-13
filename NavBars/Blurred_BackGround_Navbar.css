@@ -1,0 +1,156 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    /* background-color: rgb(80, 148, 207); */
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: rgb(239, 196, 131);
+    /* backdrop-filter: blur(50px); */
+    padding: 1.20vw;
+    border-radius: 1.2vw;
+    -webkit-border-radius: 1.2vw;
+    -moz-border-radius: 1.2vw;
+    -ms-border-radius: 1.2vw;
+    -o-border-radius: 1.2vw;
+    top: 2vw;
+    position: sticky;
+}
+
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vw 2vw;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 6vh;
+    width: 2.50vw;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links ul{
+    font-weight: 400;
+    /* margin-top: 4px; */
+    display: flex;
+    gap: 3vw;
+    font-size: 1.25vw;
+}
+
+.nav-links ul li{
+    list-style: none;
+}
+
+.nav-links ul li a{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    color: black;
+}
+
+/* Navbar Buttons */
+
+button{
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    padding: 0.60vw;
+    border: none;
+    background-color: rgb(242, 164, 46);
+    /*overflow: hidden;
+    */border-radius: 0.75vw;
+    font-weight: 500;
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    -webkit-border-radius: 0.75vw;
+    -moz-border-radius: 0.75vw;
+    -ms-border-radius: 0.75vw;
+    -o-border-radius: 0.75vw;
+}
+
+button:hover{
+    background-color: rgb(251, 205, 119);
+    color: rgb(16, 15, 15);
+}
+
+/* Background parallax effect with Image */
+
+#bg-image{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#bg-image img{
+    width: 80vw;
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    nav{
+        padding: 2vw;
+    }
+    
+    #main-nav{
+        margin: 0.50vw;
+        padding: 1.50vw;
+    }
+    
+    .logo img{
+        height: 4.25vh;
+        width: 4vw;
+    }
+    
+    .nav-links ul{
+        gap: 3vw;
+        font-size: 2vw;
+    }
+    
+    button{
+        width: 10vw;
+        padding: 1.25vw;
+        font-size: 2vw;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+}

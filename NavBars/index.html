@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation-1</title>
+    <link rel="shortcut icon" href="buycodefrombhavu.png" type="image/x-icon">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    flex-shrink: 0;
+    /* Ensuring logo size adjustments do not affect the laptop version */
+}
+
+.nav-body {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(8, 244, 94, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px; /* Retained original padding for the laptop version */
+    box-sizing: border-box;
+}
+
+.nav-body ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.nav-body ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    font-size: 20px; /* Retained original font size for the laptop version */
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.nav-button {
+    display: flex;
+    gap: 18px;
+    padding-right: 20px; /* Retained original padding and gap for the laptop version */
+}
+
+button {
+    background-color: rgb(7, 157, 75);
+    padding: 8px;
+    border-radius: 30px;
+    color: white;
+    width: 6rem; /* Retained original width for buttons */
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px; /* Retained original font size for the laptop version */
+    font-weight: bold;
+}
+
+/* Hover effects */
+.nav-body ul li a:hover,
+button:hover {
+    color: rgb(18, 179, 20);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .nav-logo img {
+        width: 10px; /* Increased logo size for tablet and below */
+        height: auto;
+
+    }
+
+    .nav-body ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        justify-content: center;
+        position: absolute;
+        bottom: 20px; /* Positioning buttons at the bottom for tablet and mobile */
+        left: 50%;
+        transform: translateX(-50%); /* Center aligning the buttons */
+    }
+
+    button {
+        padding: 10px 20px; /* Slightly larger buttons for better interaction */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-body ul li a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+        padding: 8px 10px;
+    }
+
+    .nav-logo img {
+        height: 5rem;
+        width: 50px; /* Adjusting logo size for mobile specifically */
+    }
+}
+
+.hamburger-menu {
+  display: none; /* Hide the hamburger menu by default */
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu on mobile devices */
+  }
+
+  .nav-body ul {
+    display: none; /* Hide the navigation links by default */
+  }
+
+  /* Styles for the hamburger menu when active */
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Show the navigation links when the hamburger menu is active */
+  .nav-body ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-body ul.active li {
+    margin: 10px 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container-body">
+        <nav class="nav-body">
+            <!-- <div class="nav-logo">
+                <img src="Logo_.png" alt="BuyCodeFromBhavu">
+            </div> -->
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            <div class="nav-button">
+                <button><a href="#">Login</a></button>
+                <button><a href="#">Register</a></button>
+            </div>
+        </nav>
+    </div>
+</body>
+<script>
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelector('.nav-body ul');
+
+  hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

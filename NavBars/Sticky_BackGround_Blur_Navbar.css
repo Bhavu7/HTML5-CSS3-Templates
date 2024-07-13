@@ -1,0 +1,145 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body{
+    /* background-color: rgb(80, 148, 207); */
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: rgba(22, 105, 239, 0.674);
+    backdrop-filter: blur(20px);
+    padding: 1.20vw;
+    border-radius: 0vw 0vw 1.50vw 1.50vw;
+    top: 0;
+    position: sticky;   
+}
+
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw 1vw;
+    padding: 1vw 2.50vw;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 7vh;
+    width: 3vw;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links ul{
+    font-weight: 400;
+    /* margin-top: 4px; */
+    display: flex;
+    gap: 3vw;
+    font-size: 1.25vw;
+}
+
+.nav-links ul li{
+    list-style: none;
+}
+
+.nav-links ul li a{
+    /* color: rgb(4, 40, 133); */
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    color: rgb(25, 53, 167);
+}
+
+/* Navbar Buttons */
+
+button{
+    align-items: center;
+    justify-content: center;
+    width: 5.50vw;
+    padding: 0.50vw;
+    border: none;
+    background-color: rgb(68, 128, 248);
+    border-radius: 0.55vw;
+    font-weight: 500;
+    font-size: 1.10vw;
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    cursor: pointer;
+    -webkit-border-radius: 0.55vw;
+    -moz-border-radius: 0.55vw;
+    -ms-border-radius: 0.55vw;
+    -o-border-radius: 0.55vw;
+}
+
+button:hover{
+    background-color: rgb(57, 122, 251);
+    color: rgb(0, 51, 255);
+}
+
+/* Background parallax effect with Image */
+
+#bg-image{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#bg-image img{
+    width: 80vw;
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Responsive for Mobile Devices */
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    nav{
+        padding: 2vw;
+    }
+    
+    #main-nav{
+        margin: 0.50vw;
+        padding: 1.50vw;
+    }
+    
+    .logo img{
+        height: 4.25vh;
+        width: 4vw;
+    }
+    
+    .nav-links ul{
+        gap: 3vw;
+        font-size: 2vw;
+    }
+    
+    button{
+        width: 10vw;
+        padding: 1.25vw;
+        font-size: 2vw;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+}
